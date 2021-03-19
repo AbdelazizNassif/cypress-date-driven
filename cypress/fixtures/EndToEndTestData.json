@@ -1,0 +1,33 @@
+
+[
+  { 
+   "title" : "Except Robot Verification",  
+  "firstName" : "Ahmed",
+  "lastName" : "Test",
+  "mobPhone"    : "01066441745",
+  "regPassword" : "UmtheP@ssw00rd",
+  "regCnfrmPassword" : "UmtheP@ssw00rd",
+  "studYear" : "3"
+  }
+,
+  {  
+    "title" : "Wrong Phone Number Format",  
+    "firstName" : "Morad",
+    "lastName" : "Test",
+    "mobPhone"    : "010664",
+    "regPassword" : "UmtheP@ssw00rd",
+    "regCnfrmPassword" : "UmtheP@ssw00rd",
+    "studYear" : "2"
+  }
+,
+  {  
+    "title" : "Non Match Passwords",  
+    "firstName" : "Morad",
+    "lastName" : "Test",
+    "mobPhone"    : "01066441745",
+    "regPassword" : "UmtheP@ssw00rdTest001",
+    "regCnfrmPassword" : "UmtheP@ssw00rdTest002",
+    "studYear" : "2"
+  }
+]
+

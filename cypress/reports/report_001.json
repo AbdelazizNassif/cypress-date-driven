@@ -1,0 +1,185 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-10-30T03:08:22.971Z",
+    "end": "2020-10-30T03:09:14.295Z",
+    "duration": 51324,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "aae592d8-17fc-41cb-b5cb-0d5d2baf0952",
+      "title": "",
+      "fullFile": "cypress\\integration\\B_RegisterTest.spec.js",
+      "file": "cypress\\integration\\B_RegisterTest.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "de096a27-f489-4f03-8a8b-3db9d9265dc5",
+          "title": "set up",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Register Except Robot Verification",
+              "fullTitle": "set up Register Except Robot Verification",
+              "timedOut": null,
+              "duration": 33074,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "regObj.clickStudentBtn();\nregObj.fillFirstName(testCase.firstName);\nregObj.fillLastName(testCase.lastName);\nregObj.fillMobileNumber(testCase.mobPhone);\nregObj.clickMaleOption();\nregObj.selectStudyYear(testCase.studYear);\nregObj.setPassword(testCase.regPassword);\nregObj.setConfirmPassword(testCase.regCnfrmPassword);\nregObj.acceptTermsAndConditions();\nregObj.submitRegistrationForm();\nif (state == testStates.RobotVerifError) {\n  state = testStates.PhoneFormatError;\n  regObj.checkRobotVerificationRequired();\n} else if (state == testStates.PhoneFormatError) {\n  state = testStates.NON_MATCHPASSWORDS;\n  regObj.checkRobotVerificationRequired();\n  regObj.checkWrongPhoneFormatError();\n} else if (state == testStates.NON_MATCHPASSWORDS) {\n  regObj.checkRobotVerificationRequired();\n  regObj.checkNonMatchPasswordsError();\n}",
+              "err": {},
+              "uuid": "67f8c23a-e751-4534-998e-4cbdd1876a02",
+              "parentUUID": "de096a27-f489-4f03-8a8b-3db9d9265dc5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "67f8c23a-e751-4534-998e-4cbdd1876a02"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 33074,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "8ead5f47-d2d3-4b23-b09f-e23c301b4bcf",
+          "title": "set up",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Register Wrong Phone Number Format",
+              "fullTitle": "set up Register Wrong Phone Number Format",
+              "timedOut": null,
+              "duration": 10995,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "regObj.clickStudentBtn();\nregObj.fillFirstName(testCase.firstName);\nregObj.fillLastName(testCase.lastName);\nregObj.fillMobileNumber(testCase.mobPhone);\nregObj.clickMaleOption();\nregObj.selectStudyYear(testCase.studYear);\nregObj.setPassword(testCase.regPassword);\nregObj.setConfirmPassword(testCase.regCnfrmPassword);\nregObj.acceptTermsAndConditions();\nregObj.submitRegistrationForm();\nif (state == testStates.RobotVerifError) {\n  state = testStates.PhoneFormatError;\n  regObj.checkRobotVerificationRequired();\n} else if (state == testStates.PhoneFormatError) {\n  state = testStates.NON_MATCHPASSWORDS;\n  regObj.checkRobotVerificationRequired();\n  regObj.checkWrongPhoneFormatError();\n} else if (state == testStates.NON_MATCHPASSWORDS) {\n  regObj.checkRobotVerificationRequired();\n  regObj.checkNonMatchPasswordsError();\n}",
+              "err": {},
+              "uuid": "4bf22ba0-501d-4ea7-b39a-a2130d429e65",
+              "parentUUID": "8ead5f47-d2d3-4b23-b09f-e23c301b4bcf",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4bf22ba0-501d-4ea7-b39a-a2130d429e65"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10995,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "48243ac3-1b70-489e-8847-defbe41999f5",
+          "title": "set up",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Register Non Match Passwords",
+              "fullTitle": "set up Register Non Match Passwords",
+              "timedOut": null,
+              "duration": 7079,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "regObj.clickStudentBtn();\nregObj.fillFirstName(testCase.firstName);\nregObj.fillLastName(testCase.lastName);\nregObj.fillMobileNumber(testCase.mobPhone);\nregObj.clickMaleOption();\nregObj.selectStudyYear(testCase.studYear);\nregObj.setPassword(testCase.regPassword);\nregObj.setConfirmPassword(testCase.regCnfrmPassword);\nregObj.acceptTermsAndConditions();\nregObj.submitRegistrationForm();\nif (state == testStates.RobotVerifError) {\n  state = testStates.PhoneFormatError;\n  regObj.checkRobotVerificationRequired();\n} else if (state == testStates.PhoneFormatError) {\n  state = testStates.NON_MATCHPASSWORDS;\n  regObj.checkRobotVerificationRequired();\n  regObj.checkWrongPhoneFormatError();\n} else if (state == testStates.NON_MATCHPASSWORDS) {\n  regObj.checkRobotVerificationRequired();\n  regObj.checkNonMatchPasswordsError();\n}",
+              "err": {},
+              "uuid": "7e4223ba-b5ae-4f03-a66c-6147a15ad41e",
+              "parentUUID": "48243ac3-1b70-489e-8847-defbe41999f5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7e4223ba-b5ae-4f03-a66c-6147a15ad41e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7079,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
